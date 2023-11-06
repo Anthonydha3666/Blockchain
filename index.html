@@ -38,8 +38,9 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand title-animation" href="#"><img src="./img/logo.jpg" class="logo" alt=""></a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarNavDropdown" >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -49,24 +50,16 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+            <li class="nav-item ">
+              <a class="nav-link" href="#servicios" role="button" >
                 Servicios
               </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Servicio</a></li>
-                <li><a class="dropdown-item" href="#">Servicio</a></li>
-                <li><a class="dropdown-item" href="#">Servicio</a></li>
-              </ul>
-            </li>
+           
 
             <li class="nav-item">
               <a class="nav-link" href="#">Productos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
             </li>
@@ -118,7 +111,7 @@
 
 
     <div class="info-text">
-      <h2 class="escribir">¿Qué es y para qué sirve la blockchain?</h2>
+      <h2 class="escribir" id="servicios">¿Qué es y para qué sirve la blockchain?</h2>
       <p>Blockchain es un libro mayor digital distribuido e inmutable donde se registran de las transacciones y
         nos facilita el seguimiento de activos dentro de una red. Los activos pueden ser tangibles como podría
         ser un vehículo, un producto, inmuebles, propiedades o intangibles, por ejemplo la propiedad
@@ -143,11 +136,7 @@
               <strong><a href="#">Dapps</a></strong>
             </h2>
             <p>Desarrollamos su propia aplicación descentralizada para distintas blockchains.</p>
-            <strong> <a href="#" class="read-more">
-                Leer más
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </strong>
+            
 
           </div>
         </div>
@@ -167,11 +156,7 @@
               <strong><a href="#">Soluciones WEB3</a></strong>
             </h2>
             <p>La tecnología nueva y que cambiará para siempre la forma en que utilizamos internet.</p>
-            <strong> <a href="#" class="read-more">
-                Leer más
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </strong>
+          
 
           </div>
         </div>
@@ -189,11 +174,7 @@
               <strong><a href="#">Launchpad</a></strong>
             </h2>
             <p>Desarrollamos su launchpad para proyectos basados en criptografía (Tokens NFT's).</p>
-            <strong> <a href="#" class="read-more">
-                Leer más
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </strong>
+           
 
           </div>
         </div>
@@ -211,12 +192,7 @@
               <strong><a href="#">NFT Marketplace</a></strong>
             </h2>
             <p>Desarrollamos su propio marketplace NFT compatible con Matic, BSC, Ethereum ...</p>
-            <strong> <a href="#" class="read-more">
-                Leer más
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </strong>
-
+           
           </div>
         </div>
       </div>
@@ -233,47 +209,39 @@
               <strong><a href="#">Smart Contracts </a></strong>
             </h2>
             <p>Somos expertos en Solidity. Implementamos y auditamos tus Smart Contracts.</p>
-            <strong> <a href="#" class="read-more">
-                Leer más
-                <i class="fa-solid fa-arrow-right"></i>
-              </a>
-            </strong>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="bg-card">
+        <img class="imagen" src="./img/consultoria-blockchain.jpg" alt="nft marketplace">
+        <div class="card">
+          <div class="services-content">
+            <div class="icon">
+              <img src="./img/icon/icon-3.svg" alt="Image">
+            </div>
+            <h2>
+              <strong><a href="#">Consulta Blockchain </a></strong>
+            </h2>
+            <p>Ofrecemos una solución integral en servicios de consultoría tecnológica para blockchain.</p>
+           
 
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-sm-6"><div class="bg-card">
-      <img class="imagen" src="./img/consultoria-blockchain.jpg" alt="nft marketplace">
-      <div class="card">
-        <div class="services-content">
-          <div class="icon">
-            <img src="./img/icon/icon-3.svg" alt="Image">
-          </div>
-          <h2>
-            <strong><a href="#">Consulta Blockchain </a></strong>
-          </h2>
-          <p>Ofrecemos una solución integral en servicios de consultoría tecnológica para blockchain.</p>
-          <strong> <a href="#" class="read-more">
-              Leer más
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </strong>
-
-        </div>
-      </div>
-    </div>
-  </div>
     <!-- Consultoria blockchain -->
-    
 
-    
 
-   
-    
 
-   
-   
+
+
+
+
+
+
 
 
 
@@ -469,14 +437,19 @@
     </footer>
 
   </section>
-
-
-  <script src="./scripts/preloader.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+  <script src="./scripts/preloader.js"></script>
 </body>
 
 </html>

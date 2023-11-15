@@ -39,15 +39,33 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
+
     font-family: 'Roboto', sans-serif !important;
+
+
 }
 
 html {
     width: 100%;
 }
 
+.btn{
+    z-index: 51;
+}
 /*1-terminado */
-
+.btnsrcoll{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 45px;
+    background-color: #fff;
+    display: none;
+    
+    
+}
+.btnsrcoll a:hover{
+    text-decoration: none;
+}
 /* 2-Estilos barra  */
 .navbar {
     background-color: #00000000 !important;
@@ -119,7 +137,7 @@ html {
 .title-animation {
 
     color: hsla(0, 0%, 0%, .9);
-    font-size: 4vw;
+    font-size: 3vw;
     left: 0;
     letter-spacing: 2px;
 
@@ -201,7 +219,7 @@ html {
     padding: 20px 25px;
     text-align: center;
 
-    padding-top: 80px;
+
     position: relative;
     font-size: 20px;
     background-color: #fff;
@@ -243,7 +261,7 @@ html {
     padding: 20px 25px;
   
     color: #ffff !important;
-    font-size: 2.7vw;
+    font-size: 1.5vw;
 
 }
 
@@ -279,7 +297,7 @@ html {
 
 .card {
     width: 100%;
-    max-width: 550px;
+  
     min-width: 100px;
     background-color: #292828e5;
     color: #ffffff ;
@@ -344,7 +362,7 @@ border-radius: 30px ;
 
 .form-diseño {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px;
     background-color: var(--main-bg-color);
     padding: 50px;
     color: #ffff;
@@ -362,7 +380,16 @@ border-radius: 30px ;
 
 .form-group {
     margin: 20px;
-
+    margin-left: 5px;
+    display: flex;
+}
+.form-group  input{
+    margin: 10px !important;
+}
+textarea{
+    width: 100%;
+    border-radius: 10px;
+    
 }
 
 .form-diseño .btn {
@@ -399,13 +426,20 @@ border-radius: 30px ;
 }
 
 .form-diseño input {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
     padding: 7px 15px;
     outline: none;
+    justify-content: center;
+    align-items: center;
 
 
+}
+.form-diseño  .row input{
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (min-width: 100px) and (max-width: 380px) {
@@ -425,8 +459,8 @@ border-radius: 30px ;
 
 
     color: #ffff;
-    margin-top: 100px;
-    background-image: url(../img/contract_bg.jpg);
+
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -436,8 +470,8 @@ border-radius: 30px ;
     color: #ffff;
 
     width: 100%;
-    padding-top: 30px;
-
+    padding-top: 100px;
+    
     border-radius: 10px;
 }
 
@@ -547,7 +581,7 @@ footer {
     background-color: #fff;
     padding: 20px 0;
     color: #000000;
-    padding: 50px;
+    
 }
 
 .footer .container {
@@ -561,15 +595,12 @@ footer {
     color: #000000;
 }
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
+
 }
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -688,3 +719,39 @@ h1 {
     }
   }
 /* 11-terminado */
+/* 12- boton del inicio */
+.text-info a{
+    text-decoration: none;
+    color:#fff;
+}
+.btn-contacto{
+    width: 100%;    
+    max-width: 250px;
+    min-width: 200px;
+    background-color: rgb(79, 17, 136);
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    font-weight: bold;
+    
+}
+
+.btn-contacto:hover{
+    background-color: #18bdec;
+    color:black ;
+}
+.btn-contacto  a:hover{
+   
+    color:black;
+}
+/* 12-terminado */
+
+
+.navbar li img{
+    max-width: 50px;
+    object-fit: cover;
+}
+#language-switch{
+    cursor: pointer;
+}
